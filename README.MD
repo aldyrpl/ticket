@@ -15,7 +15,7 @@ php generate-event.php "Event Name"
 
 ## Generate Ticket
 ```bash
-php generate-event.php {event_id} {total_ticket}
+php generate-ticket.php {event_id} {total_ticket}
 ```
 
 # API Access
