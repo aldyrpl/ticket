@@ -12,7 +12,7 @@ function addEvent($event_name)
       VALUES (:event_name, :created_at)");
 
     //Bind param to SQL Statement
-    $stmt->bindParam(':event_name', $event_name);
+    $stmt->bindParam(':event_name', htmlspecialchars(strip_tags($event_name)));
     $stmt->bindParam(':created_at', date('Y-m-d H:i:s'));
     $stmt->execute();
 
